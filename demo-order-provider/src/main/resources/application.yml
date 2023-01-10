@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo-order
+dubbo:
+  scan:
+    base-packages: cn.zewade.order.dubbo
+  registry:
+    address: localhost:2181
+    protocol: zookeeper
+    timeout: 60000
+  application:
+    qos-port: 22222
+  protocol:
+    port: 20882
+server:
+  port: 9082

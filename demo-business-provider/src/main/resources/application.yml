@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo-business
+dubbo:
+  scan:
+    base-packages: cn.zewade.business.dubbo
+  registry:
+    address: localhost:2181
+    protocol: zookeeper
+    timeout: 60000
+  application:
+    qos-port: 22223
+  protocol:
+    port: 20883
+server:
+  port: 9083
