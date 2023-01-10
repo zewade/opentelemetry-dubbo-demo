@@ -11,6 +11,7 @@ I use opentelemetry java agent to capture traces to Jaeger, and here are the vm 
 -Dotel.javaagent.debug=true
 -Dotel.service.name=demo-xxx
 ```
+Request url is http://localhost:9083/handle-business
 The trace will break when consumering apache dubbo methods continuously.
 Here are the snapshot from Jaeger UI.We can see the dubbo client trace are not fully captured. 
 ![trace1.png](trace1.png)
